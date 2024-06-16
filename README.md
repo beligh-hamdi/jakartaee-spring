@@ -80,3 +80,11 @@ mvn install:install-file -Dfile=tmp/output_duke-lib-1.0.jar -DgroupId=dukes -Dar
 
 
 https://github.com/OmniFish-EE/upgrading-jakarta-ee-applications/blob/main/javax-jakarta-transform-dependencies-uberjar/transform-dependencies/pom.xml
+
+
+
+[INFO] [  All Resources ] [  21672 ] Unaccepted [      0 ]   Accepted [  21672 ]
+[INFO] [  All Unchanged ] [  21565 ]     Failed [      0 ] Duplicated [      0 ]
+[INFO] [    All Changed ] [    107 ]    Renamed [      0 ]    Content [    107 ]
+
+

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <groupId>dukes</groupId>
     <artifactId>transform-dependencies</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
-    <name>EE10 separate shaded deps - transform dependencies</name>
+    <description>EE10 separate shaded deps - transform dependencies</description>
+
     <properties>
+        <java.version>21</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <shadedjar.directory>${project.build.directory}/shaded</shadedjar.directory>
         <shadedjar.file>${shadedjar.directory}/WEB-INF/lib/transform-dependencies-shaded.jar</shadedjar.file>
@@ -15,11 +18,12 @@
     <dependencies>
         <!-- dependencies not compatible with Jakarta EE 9+
         - will be transformed in the final JAR artifact -->
-        <dependency>
-            <groupId>dukes</groupId>
-            <artifactId>duke-lib</artifactId>
-            <version>3.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>dukes</groupId>-->
+<!--            <artifactId>duke-lib</artifactId>-->
+<!--            <version>3.0</version>-->
+<!--        </dependency>-->
+
         <dependency>
             <groupId>dukes</groupId>
             <artifactId>duke-dep</artifactId>
